@@ -11,9 +11,9 @@ const Main = () => {
         <MainContent>
             <Router>
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
+                    <Route path="/Pokemon/" element={<HomePage />} />
                     <Route path="/Pokemon/pokemon/:name" element={<PokemonPage />} />
-                    <Route path="/favorites" element={<Favorite />} />
+                    <Route path="/Pokemon/favorites" element={<Favorite />} />
                 </Routes>
             </Router>
         </MainContent>
