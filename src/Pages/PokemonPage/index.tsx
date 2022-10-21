@@ -39,7 +39,7 @@ const PokemonPage = () => {
     return (
         <PokemonContent>
             <BackBtn onClick={() => {
-                navigate("/")
+                navigate("/Pokemon/")
             }}>
                 <FaArrowCircleLeft size={50}/>
                 Go to home
