@@ -17,4 +17,5 @@
 # what's needed for run that project:
 
     Install node_modules: npm install
+    Remove "/Pokemon" to work in locally
     For execute: npm start
