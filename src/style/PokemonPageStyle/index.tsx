@@ -13,7 +13,8 @@ export const PokemonContent = styled.div`
  position: relative;
  min-height: 100vh;
  @media screen and (max-width: 767px){
-  margin-top: 5rem;
+  min-height: 1000px;
+  flex-direction: column;
 }
 `;
 
@@ -99,8 +100,9 @@ export const BackBtn = styled.div`
     color: ${blue};
     font-weight: 600;
     @media screen and (max-width: 767px){
-      left: 0rem;
-      top: -3.5rem;
+      position: initial;
+      margin-right: auto;
+      margin-top: 1rem;
     }
 `;
 
