@@ -21,7 +21,7 @@ const Cards = ({pokemons}: PokemonsCards) => {
         
         return (
             <CardsContent key={index}>
-                <NavbarLink to={`/pokemon/${item.name}`} state={item}>
+                <NavbarLink to={`/Pokemon/pokemon/${item.name}`} state={item}>
                     <Img src={item.sprites.front_default} alt={item.name}/>
                     <span>{item.name}</span>
                 </NavbarLink>
