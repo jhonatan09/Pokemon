@@ -12,12 +12,12 @@ const Header = () => {
             <Logo src={logo} alt="logo" />
             <HeaderContent>
               <HeaderContentNav onClick={() => {
-                navigate("/Pokemon/")
+                navigate("/")
             }}>
                 Home Page
             </HeaderContentNav>
             <HeaderContentNav onClick={() => {
-                navigate("/Pokemon/favorites")
+                navigate("/favorites")
             }}>
                 Favorite Page
             </HeaderContentNav>

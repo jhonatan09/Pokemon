@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {black, white, green} from './colors'
+import {black, white, green, red} from './colors'
 
 
 // I put the general style here and for more specific i was created paths with files styles
@@ -40,5 +40,19 @@ export const StyleFavoriteIconCurso = styled.span`
 cursor: pointer;
 `;
 
+
+export const FavoriteWarning = styled.span`
+  font-size: 5rem;
+  font-weight: 600;
+  color: ${red};
+  text-transform: uppercase;
+  width: 100%;
+  text-align:center;
+  margin: 6rem 1rem 16rem;
+  @media screen and (max-width: 767px){
+    font-size: 3rem;
+    margin: 6rem 1rem 15rem;
+  }
+`;
 
 

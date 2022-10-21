@@ -7,6 +7,7 @@ height: 28rem;
 width: 59%;
 @media screen and (max-width: 767px){
   width: 100%;
+  height: 22rem;
 }
 `;
 
@@ -19,6 +20,7 @@ export const HeaderContent = styled.div`
 display: flex;
 width: 100%;
 justify-content: center;
+margin-top: 1rem;
 `;
 export const HeaderContentNav = styled.div`
 margin: 0 3rem;

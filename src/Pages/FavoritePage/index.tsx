@@ -1,7 +1,7 @@
 import Cards from '../../components/cards';
 import {useContext} from 'react'
 import { DataContext } from "../../store";
-import {CentralizeContent, Container} from '../../style'
+import {CentralizeContent, Container, FavoriteWarning} from '../../style'
 import Header from '../../components/Header'
 
 const Favorite = () => {
@@ -14,7 +14,7 @@ const Favorite = () => {
         <Container>
             <Header />
             <CentralizeContent>
-                <Cards pokemons={favorite} />
+                {favorite.length > 0? <Cards pokemons={favorite} /> : <FavoriteWarning>Not have any favorite added yet, Please add one to see in this Page</FavoriteWarning>}
             </CentralizeContent>
         </Container>
     )
