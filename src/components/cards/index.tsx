@@ -22,7 +22,7 @@ const Cards = ({pokemons}: PokemonsCards) => {
         return (
             <CardsContent key={index}>
                 <NavbarLink to={`/Pokemon/pokemon/${item.name}`} state={item}>
-                    <Img src={item.sprites.front_default} alt={item.name}/>
+                    {item.sprites.front_default? <Img src={item.sprites.front_default} alt={item.name} />: <span>Image not found</span>}
                     <span>{item.name}</span>
                 </NavbarLink>
                 {findName.length === 0 ? <StyleFavoriteIconCurso onClick={() => addFavotirePokemons(item, item.name)}><FaHeart color='#c7c7c7' size={30}/></StyleFavoriteIconCurso>: <StyleFavoriteIconCurso onClick={() => removeFavotirePokemons(item.name)}> <FaHeart color='red' size={40}/></StyleFavoriteIconCurso>}
